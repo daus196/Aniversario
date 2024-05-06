@@ -1,0 +1,72 @@
+@mixin image(){
+    background-image: url('../images/baloes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+*{
+    padding: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+
+body{
+    @include image(); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    
+    &-textjs{
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+.hero{
+
+    &-form{
+        max-width: 960px;
+        padding-top: 20px;
+        
+        &-itens{
+            &-label{
+                font-size: 20px;
+                font-family: sans-serif;
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            &-input{
+                max-width: 360px;
+                width: 100%;
+                padding: 5px;
+
+            }
+
+        }
+    }
+
+    button{
+        padding: 8px;
+        width: 100px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: silver;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+    }
+}
+
+
+
